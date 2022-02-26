@@ -7,13 +7,9 @@ const credentials = {key: fs.readFileSync(path.join(__dirname, 'cert', 'cert.key
 const app = express();
 
 //middleware
-app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
-    if (req.secure) {
-        return next();
-    }
+app.get('*', function(req, res, next){
 
-    res.redirect('https://'+req.hostname + ':' + app.get('secPort') + req.url);
+    res.redirect('https://' +req.headers.host + req.path);
 });
 app.use(express.static(path.join(__dirname + '/public')));
 const sslServer = https.createServer(credentials, app);
