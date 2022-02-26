@@ -13,13 +13,11 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 
 //routes
-app.get('*', (req, res) => {
-    res.redirect('https://' + req.headers.host + req.url);
-})
+
 
 //create and  start server
-const httpServer = http.createServer(app);
+// const httpServer = http.createServer(app);
 const sslServer = https.createServer(credentials, app);
 sslServer.listen(3443)
-httpServer.listen(3000)
+// httpServer.listen(3000)
 
