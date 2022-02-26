@@ -8,7 +8,7 @@ const app = express();
 
 //middleware
 app.enable('trust proxy');
-app.use((req, res, next) => {
+app.all('*',(req, res, next) => {
     req.secure ? next() : res.redirect('https://' + req.headers.host + req.url)
 });
 app.use(express.static(path.join(__dirname + '/public')));
