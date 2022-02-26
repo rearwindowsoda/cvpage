@@ -6,14 +6,13 @@ const credentials = {key: fs.readFileSync(path.join(__dirname, 'cert', 'cert.key
 const app = express();
 
 //middleware
-app.all('*', ensureSecure)
+
 const sslServer = https.createServer(credentials, app);
 sslServer.listen(443)
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/public')), ensureSecure);
 
 function ensureSecure(req, res, next){
     if(req.secure){
-        // OK, continue
         return next();
     };
     res.redirect('https://' + req.hostname + req.url);
