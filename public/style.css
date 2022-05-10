@@ -1,49 +1,60 @@
-
-#wrapper{
-height: 100vh;
-    width: 100vw;
-    /*display: flex;*/
-    justify-content: center;
-/*flex-direction: column;*/
-
+#wrapper {
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
 }
-#aboutme{
-    margin: 3vh auto;
-    width: 90%
-;
-    padding: 3px;
-    text-align: center;
-
-}
-#personal-logo{
-    animation-duration: 4s;
-    animation-name: fadein;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-}
-#personal-logo>a>img{
-  display: block;
-    margin: auto;
-    min-width: 200px;
-    max-width: 30vw;
-    height: auto;
+.first-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.justified{
-    text-align: justify;
-}
-article>img{
-    float: left;
-    margin: 10px 10px;
-    max-width: 300px
+.centered-elements {
+	margin: 3vh auto;
+	width: 90%;
+	padding: 3px;
+	text-align: center;
 }
 
+#personal-logo {
+	animation-duration: 4s;
+	animation-name: fadein;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+#personal-logo > a > img {
+	display: block;
+	margin: auto;
+	min-width: 200px;
+	max-width: 30vw;
+	height: auto;
+}
+
+#top-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#top-menu > a {
+	padding: 5px;
+}
+
+article > img {
+	float: left;
+	margin: 10px 10px;
+	max-width: 300px;
+}
+
+.justified {
+	text-align: justify;
+}
 @keyframes fadein {
-    from {
-       opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 100%;
-    }
+	to {
+		opacity: 100%;
+	}
 }

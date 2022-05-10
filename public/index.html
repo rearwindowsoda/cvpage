@@ -14,18 +14,19 @@
     <div id="personal-logo">
         <a href="/"><img src="images/logo.png"> </a>
     </div>
-    <div id="aboutme">
-        <article>
-            <img src="images/ja.jpg"> <p class="justified"> Obecnie pracuję jako młodszy analityk mediów w agencji informacyjnej. Powtarzalność i małe
-            możliwości
-            rozwoju sprawiają, że nie jest to branża, w której chciałbym dalej realizować się zawodowo.
-            Zdecydowałem się spróbować swoich sił w świecie IT. Padło na programowanie, a dokładniej JavaScript.
+    <div class="centered-elements">
+        <div class="first-container">
+            <div id="top-menu"><a href="/">Strona główna</a><a href="#about-me">O mnie</a><a href="#portfolio">Porftolio</a><a href="#experience">Doświadczenie</a><a href="#education">Wykształcenie</a></div>
+            <article>
+            <img src="images/ja.jpg"> <p class="justified"> Obecnie pracuję jako młodszy analityk mediów w agencji informacyjnej. Moje obowiązki zawodowe nie poszerzyły się znacznie przez ostatnie trzy lata. Dlatego też postanowiłem zdobyć zupełnie nowe, dotychczas obce mi kompetencje.
+          Padło na programowanie, a dokładniej JavaScript.
             Staram się systematycznie zdobywać i pogłębiać wiedzę związaną z tym obszarem. Już od pierwszych dni
             rozeznawania się w technologiach programowania, poczułem przyciąganie na stronę back-endu, stąd decyzja o zapisaniu się na bootcamp megaK, który skupia się właśnie na wykorzystaniu JavaScript do
             tworzenia rozwiązań back-endowych. Nie zamierzam poprzestawać jedynie na back-endzie, nauka technologii front-endowych to kolejny etap mojego rozwoju. </p>
         </article>
+        </div>
         <details open>
-        <summary>O mnie</summary>
+        <summary id="about-me">O mnie</summary>
         <h3 class="justified"><i class="fa-solid fa-head-side-mask"></i> Mateusz Owczarek</h3>
             <p class="justified"><i class="fa-solid fa-at"></i><a href="mailto:mat.owc@o2.pl">mat.owc@o2.pl</a></p>
             <p class="justified"><i class="fa-solid fa-cake-candles"></i> 30.06.1996 r.</p>
@@ -35,7 +36,7 @@
 
     </details>
         <details>
-            <summary>Wykształcenie</summary>
+            <summary id="education">Wykształcenie</summary>
             <p class="justified">10.2015 - 06.2018</p>
             <h3 class="justified">Uniwersytet im. Adama Mickiewicza w Poznaniu</h3>
             <p class="justified">Kierunek: socjologia</p>
@@ -43,7 +44,7 @@
             <p class="justified">Praca licencjacka: <i>Lokowanie idei w polskich serialach obyczajowych.</i></p>
         </details>
         <details>
-            <summary>Doświadczenie zawodowe</summary>
+            <summary id="experience">Doświadczenie zawodowe</summary>
             <p class="justified">06.2019 - obecnie</p>
             <h3 class="justified"><strong>Analityk mediów</strong></h3>
             <p class="justified">PRESS-SERVICE Monitoring Mediów Sp. z o.o. | Poznań</p>
@@ -152,7 +153,7 @@
     </div>
     </div>
 
-    <section>
+    <section id="portfolio">
 
         <a href="files/mowczarekcv.pdf" role="button"> <i class="fa-solid fa-file-pdf"></i> Pobierz moje CV w wersji pdf</a>
     </section>
@@ -163,13 +164,13 @@
         <div class="grid">
             <div>
                 <strong>ASR Licznik</strong>
-                <a href="http://asrlicznik.ct8.pl" target="_blank"><img src="images/asrlicznik21.png" width="300"></a>
+                <a href="https://asrlicznik.ct8.pl" target="_blank"><img src="images/asrlicznik21.png" width="300"></a>
                 <p>
                     Aplikacja powstała po to, by ułatwić pracownikom firmy, w której obecnie pracuję, naliczanie sobie punktów za opracowane segmenty radiowe. Pracownicy mają możliwość zapisywać swoje punkty lokalnie do pamięci przeglądarki lub mogą też założyć konto i zapisywać punkty do bazy danych.
                 </p>
                 <p><mark>Wykorzystano następujące technologie: HTML, CSS, JS, Handlebars, Node.js, Express.js, MongoDB, JSON Web Token, Github</mark></p>
                 <p>
-                    Link do aplikacji: <a href="http://asrlicznik.ct8.pl" target="_blank">asrlicznik.ct8.pl</a>
+                    Link do aplikacji: <a href="https://asrlicznik.ct8.pl" target="_blank">asrlicznik.ct8.pl</a>
                     <br/>
                     Link do repozytorium GH <i class="fa-brands fa-github"></i>  <a href="https://github.com/rearwindowsoda/asr-public-git" target="_blank">github.com/rearwindowsoda/asr-public-git</a>
                 </p>
@@ -181,7 +182,7 @@ Prosta aplikacja CRUD. Pozwala na wyświetlenie wszystkich zadań do wykonania, 
                 </p>
                 <p><mark>Wykorzystano następujące technologie: HTML, CSS, Pico.css, Handlebars, Node.js, Express.js, Mysql2/promises, Heroku, Github</mark></p>
                 <p>
-                    Link do aplikacji: <a href="https://asrlicznik.ct8.pl" target="_blank">asrlicznik.ct8.pl</a>
+                    Link do aplikacji: <a href="https://secret-sea-19768.herokuapp.com/" target="_blank">secret-sea-19768.herokuapp.com</a>
                     <br/>
                     Link do repozytorium GH <i class="fa-brands fa-github"></i>  <a href="https://github.com/rearwindowsoda/todo-git-public" target="_blank">github.com/rearwindowsoda/todo-git-public</a>
                 </p>
