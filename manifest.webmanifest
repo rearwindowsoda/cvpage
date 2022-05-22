@@ -1,0 +1,15 @@
+{
+	"background_color": "purple",
+	"description": "Mateusz Owczarek | Backend JS Developer",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"src": "images/192icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	],
+	"name": "Mateusz Owczarek - personal page",
+	"short_name": "Mateusz Owczarek",
+	"start_url": "/index.html"
+}
