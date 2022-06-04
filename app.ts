@@ -1,7 +1,6 @@
-const express = require("express");
-const path = require("path");
+import * as express from 'express'
+import * as path from 'path'
 const app = express();
-
 //middleware
 app.use(express.static(path.join(__dirname + "/public")));
 
