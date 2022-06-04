@@ -1,3 +1,4 @@
 # Project exclude paths
 /node_modules/
 /public/files/mowczarekcv.pdf/
+/dist/
